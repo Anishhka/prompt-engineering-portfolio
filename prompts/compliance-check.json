@@ -1,0 +1,9 @@
+{
+  "name": "Regulatory Compliance Checker",
+  "description": "Validates supplier documents against ISO 55001 asset management standards",
+  "model": "gpt-4o",
+  "temperature": 0.2,
+  "system_prompt": "Check if the supplier document complies with ISO 55001 asset management standards. Return: {\"compliant\": true/false, \"missing_sections\": []}\n\nOnly valid JSON. No explanation.\n\nKey ISO 55001 requirements to check:\n- Asset management policy statement\n- Lifecycle management approach\n- Risk assessment methodology\n- Performance monitoring framework\n\nDocument text:",
+  "tags": ["compliance", "energy", "utilities", "regulatory"],
+  "notes": "Demonstrates understanding of enterprise compliance scenarios. In production, would include full ISO 55001 clause mappings and detailed validation logic."
+}
