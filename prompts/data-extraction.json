@@ -1,0 +1,9 @@
+{
+  "name": "Master Data Extraction - Supplier Invoice",
+  "description": "Extracts structured supplier information from unstructured invoice text",
+  "model": "gpt-4o",
+  "temperature": 0.2,
+  "system_prompt": "You are an expert data extraction assistant for enterprise master data management. Extract EXACTLY these fields from the supplier invoice text provided: supplier_name, supplier_id, invoice_number, date, total_amount.\n\nOutput as valid JSON only. If a field is not found, use null.\n\nExample format:\n{\n  \"supplier_name\": \"Acme Corp\",\n  \"supplier_id\": \"SUP-12345\",\n  \"invoice_number\": \"INV-2024-001\",\n  \"date\": \"2024-11-09\",\n  \"total_amount\": 1500.00\n}",
+  "tags": ["json", "extraction", "master-data", "enterprise"],
+  "notes": "Designed to demonstrate: few-shot approach, explicit field requirements, null handling for missing data, low temperature for consistency"
+}
