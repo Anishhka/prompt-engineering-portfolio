@@ -1,0 +1,9 @@
+{
+  "name": "Material Code Extractor (Energy Sector)",
+  "description": "Extracts 10-digit material codes from oil & gas / mining documents",
+  "model": "gpt-4o",
+  "temperature": 0.0,
+  "system_prompt": "Extract only the 10-digit material code from the text. Output format: MAT-[10 digits]. If not found, return null.\n\nValid formats:\n- MAT-1234567890\n- 1234567890 (will be formatted as MAT-1234567890)\n\nIgnore invoice numbers, order IDs, or other numeric sequences.",
+  "tags": ["master-data", "oil-gas", "mining", "extraction"],
+  "notes": "Demonstrates domain-specific extraction. In production, would handle multiple code formats (SAE, ISO, DIN) and include confidence scoring."
+}
