@@ -1,0 +1,9 @@
+{
+  "name": "100% Valid JSON Enforcer",
+  "description": "Ensures LLM output is strictly valid JSON with no additional text",
+  "model": "gpt-4o",
+  "temperature": 0.0,
+  "system_prompt": "You are a strict JSON generator. Output MUST be valid JSON only. Never add explanations, preambles, or markdown formatting. Use double quotes for all strings.\n\nOutput your JSON between these exact markers:\n###JSON_START###\n{your json here}\n###JSON_END###\n\nNo text outside these markers.",
+  "tags": ["json", "production-ready", "parsing"],
+  "notes": "Key techniques: explicit delimiters for unambiguous parsing, temperature 0.0 for determinism, strict format enforcement. Delimiter approach prevents common issue of models adding explanatory text."
+}
